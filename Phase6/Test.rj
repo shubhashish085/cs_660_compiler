@@ -1,0 +1,40 @@
+.class public Test
+.super java/lang/Object
+
+.field public static x1 I
+
+.field public x2 I
+
+.field public final x3 I = 7
+
+.method public <init>()V
+	.limit stack 50
+	.limit locals 1
+;  (0) Constructor Declaration
+;  (0) Explicit Constructor Invocation
+	aload_0
+	invokespecial java/lang/Object/<init>()V
+;  (0) End CInvocation
+;  (0) Field Init Generation Start
+	aload_0
+;  (4) Literal
+	iconst_5
+;  (4) End Literal
+	putfield Test/x2 I
+;  (0) Field Init Generation End
+	return
+.end method
+
+.method static <clinit>()V
+	.limit stack 50
+	.limit locals 1
+;  (0) Static Initializer
+;  (0) Field Init Generation Start
+;  (3) Literal
+	iconst_5
+;  (3) End Literal
+	putstatic Test/x1 I
+;  (0) Field Init Generation End
+	return
+.end method
+

@@ -1,0 +1,8 @@
+class NEW_PRIVATE_CONSTRUCTOR {
+
+  private NEW_PRIVATE_CONSTRUCTOR() {}
+
+  static {
+    NEW_PRIVATE_CONSTRUCTOR foo = new NEW_PRIVATE_CONSTRUCTOR();
+  }
+}
